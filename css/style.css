@@ -17,16 +17,23 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content); }
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 6rem [sidebar-end full-start] minmax(6rem, 1fr) repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) minmax(6rem, 1fr) [full-end]; }
+  .container > * {
+    padding: 30px;
+    font-size: 3rem; }
 
 .sidebar {
-  background-color: #c69963; }
+  background-color: #c69963;
+  grid-row: 1 / -1; }
 
 .header {
-  background-color: #101d2c; }
+  background-color: #101d2c;
+  grid-column: sidebar-end / col-end 5; }
 
 .realtors {
-  background-color: #B28451; }
+  background-color: #B28451;
+  grid-column: col-start 6 / full-end; }
 
 .features {
   background-color: #f9f7f6; }
