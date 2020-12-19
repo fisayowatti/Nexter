@@ -1,2 +1,2 @@
 # Nexter
-A real estate project (Real intention here is practicing CSS Grid)
+A landing page for a real estate company.
