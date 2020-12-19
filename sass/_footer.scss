@@ -1,4 +1,45 @@
 .footer {
-    background-color: $color-primary;
+    background-color: $color-secondary;
     grid-column: full-start / full-end;
+    padding: 8rem;
+}
+
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    // justify-items: center;
+    align-items: center;
+    // margin: 6rem 2rem;
+    
+    list-style: none;
+
+    
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.4rem;
+        font-family: $font-display;
+        padding: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        display: block;
+        transition:  all .2s;
+    }
+
+    &__link:hover,
+    &__link:active {
+        background-color: rgba(#ffffff, 0.05);
+        transform: translateY(-.3rem);
+    }
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: $color-grey-light-2;
+    width: 70%;
+    margin: 6rem auto 0 auto;
+    text-align: center;
+
 }
